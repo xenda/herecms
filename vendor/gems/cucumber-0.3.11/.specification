@@ -9,7 +9,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2009-06-04 00:00:00 -04:00
+date: 2009-06-03 23:00:00 -05:00
 default_executable: cucumber
 dependencies: 
 - !ruby/object:Gem::Dependency 
@@ -489,6 +489,8 @@ rdoc_options:
 - --main
 - README.txt
 require_paths: 
+- bin
+- bin
 - lib
 required_ruby_version: !ruby/object:Gem::Requirement 
   requirements: 
@@ -505,7 +507,7 @@ required_rubygems_version: !ruby/object:Gem::Requirement
 requirements: []
 
 rubyforge_project: rspec
-rubygems_version: 1.3.4
+rubygems_version: 1.3.5
 signing_key: 
 specification_version: 2
 summary: Executable Feature scenarios

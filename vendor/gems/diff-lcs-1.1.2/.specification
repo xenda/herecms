@@ -8,7 +8,7 @@ authors: []
 autorequire: diff/lcs
 bindir: bin
 cert_chain: 
-date: 2004-10-20 00:00:00 -04:00
+date: 2004-10-19 23:00:00 -05:00
 default_executable: 
 dependencies: []
 
@@ -56,6 +56,8 @@ rdoc_options:
 - README
 - --line-numbers
 require_paths: 
+- bin
+- bin
 - lib
 required_ruby_version: !ruby/object:Gem::Requirement 
   requirements: 
@@ -72,7 +74,7 @@ required_rubygems_version: !ruby/object:Gem::Requirement
 requirements: []
 
 rubyforge_project: ruwiki
-rubygems_version: 1.3.4
+rubygems_version: 1.3.5
 signing_key: 
 specification_version: 1
 summary: Provides a list of changes that represent the difference between two sequenced collections.
