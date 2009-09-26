@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key    => "_CHANGEME_session",
-  :secret => "CHANGESESSION"
+  :key    => "_herecms_session",
+  :secret => "611afd005ca7c81361a04f82b45a72cd"
 }
 
 # Use the database for sessions instead of the cookie-based default,
