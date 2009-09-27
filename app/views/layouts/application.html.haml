@@ -1,0 +1,22 @@
+!!!
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-type" }
+    %title= CMS_NAME
+    = stylesheet_link_tag ['reset','scaffold','screen'], :media => 'all', :cache => true
+  %body{ :class => body_class }
+    #header
+      .wrap
+        .logo
+          %h1= link_to CMS_NAME, root_path
+          %h2 easing your way into the light
+        .utilities
+          = link_to "Sign up", new_user_path, {:id=>"sign_up_link"} 
+          = link_to "Sign in", new_session_path, {:id=>"sign_in_link"} 
+    #content
+      .wrap
+        = render :partial => 'shared/flashes'
+        = yield
+    #footer
+      .wrap Nothing to see here... yet
+    = render :partial => 'shared/javascript'

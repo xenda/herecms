@@ -1,0 +1,20 @@
+%h2 Hey, how you doin'
+%p#welcome
+  = "Welcome to #{CMS_NAME}. Starting out is as easy as"
+
+%ol
+  %li 
+    %h3 1. Uploading your files
+    %span.step
+    %p.small Upload either a bunch of files or a zipped file (great for organization!)
+    =link_to "Learn more", "#",{:id=>"uploading_files_link", :class=>"learn_more"}
+  %li 
+    %h3 2. Updating your new content
+    %span.step
+    %p.small We'll do our best to let you update your content. We'll even save your changes so you can go back to whatever modifications you made.
+    =link_to "Learn more", "#",{:id=>"editing_files_link", :class=>"learn_more"}
+  %li 
+    %h3 3. Transferring to your server (or just downloading them)
+    %span.step    
+    %p.small If you work with FTP, enter your account information and we'll upload your files ourselves. And if not, download a zipped file with everything you need.
+    =link_to "Learn more", "#",{:id=>"sending_files_link", :class=>"learn_more"}    
